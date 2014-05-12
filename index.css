@@ -1,0 +1,73 @@
+/**
+ * Reset
+ */
+
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+/**
+ * Outer frame
+ */
+
+.frame {
+  padding: 30px;
+}
+
+.browser {
+  width: 100%;
+  max-width: 600px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/**
+ * Navigation bar
+ */ 
+
+.header {
+  height: 25px;
+  width: 100%;
+  border-bottom: 3px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: 18px;
+  }
+}
+
+.circle {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 12px;
+  width: 12px;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+@media screen and (max-width: 650px) {
+  .circle {
+    display: none;
+  }
+}
+
+/**
+ * Inner content
+ */
+
+.image {
+  display: block;
+  width: 100%;
+}
